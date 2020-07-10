@@ -210,7 +210,7 @@ public:
 	{
 		VarHolder* pHolder = content();
 
-		if (pHolder && pHolder->type() == typeid(T))
+		if (pHolder && strcmp(pHolder->type().name(), typeid(T).name()) == 0)
 		{
 			VarHolderImpl<T>* pHolderImpl = static_cast<VarHolderImpl<T>*>(pHolder);
 			return pHolderImpl->value();
