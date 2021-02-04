@@ -132,3 +132,8 @@ cmake-build/
 *.bak
 stage/
 releases/
+
+# Build folders #
+#################
+build-*
+install-*
